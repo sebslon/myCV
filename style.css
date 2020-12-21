@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
-.header {
+/* hero-img styles */
+.hero-img {
   padding: 2em;
+  font-size: 20px;
+  line-height: 1.8em;
   text-align: center;
   background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
   background-size: cover;
@@ -9,91 +12,80 @@
   color: white;
 }
 
-.header__section {
+.hero-img__header, .hero-img__nav {
   margin: 0 auto;
   padding: 1em;
   max-width: 640px;
 }
 
-/* .header__img {
-  border-radius: 50%;
-  max-width: 150px;
-} */
-
 .main {
   max-width: 1140px;
 }
 
+/* sections styles */
 .section {
   margin: 1em;
   padding: 1em;
+  border-bottom: 1px solid #ccc;
 }
 
-.section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+.section-last {
+  border: none;
 }
 
 .section__article {
   padding: 0 1em;
 }
 
-.section__article--title {
+.article__title {
   color: var(--first-color);
-  -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
 }
 
-.section__article--description {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
+.article__description {
+  flex: 0 0 calc(66.6% - 1em);
   max-width: 66.6%;
-}
-
-.section__course,
-.section__skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.section__article--description p {
   padding-left: 1em;
 }
 
-.section__skills--column {
-  -ms-flex: 0 0 50%;
+.section__course,
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__column {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.section__skills--column-list,
-.section__article--job-description {
+.skills__column-list,
+.article__job-description {
   list-style-type: none;
 }
 
-.section__skills--column-list > li:before {
+.skills__column-list > li:before {
   content: "►";
   padding-right: 0.5em;
   color: var(--first-color);
 }
 
-.section__article--school,
-.section__article--job-title {
-  text-transform: capitalize;
-}
-
-.section__article--school span,
-.section__article--job-title span {
-  color: #889499;
-  text-decoration: underline;
-}
-
-.section__article--job-description > li:before {
+.article__job-description > li:before {
   content: "✔";
   padding-right: 0.5em;
   color: var(--first-color);
+}
+
+.article__school,
+.article__job-title {
+  text-transform: capitalize;
+}
+
+.article__school-years,
+.article__job-years {
+  color: #889499;
+  text-decoration: underline;
 }
 
 .footer {
@@ -108,18 +100,36 @@
     display: block;
   }
 
-  .section__article--title,
-  .section__article--description {
+  .article__title,
+  .article__description {
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-img {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .skills__column-list,
+  .article__job-description {
+    padding-left: 0.8em;
+  }
+
   .section__skills {
     display: block;
   }
 
-  .section__skills--column {
+  .skills__column {
     max-width: 100%;
   }
 

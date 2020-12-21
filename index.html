@@ -16,44 +16,41 @@
 
 <body>
 
-  <header class="header">
-    <div>
-      <!-- <img src="./img/me11.jpg" class="header__img"/> -->
-    </div>
-    <h1>Sebastian Słoniec</h1>
-    <section class="header__section">
+  <div class="hero-img">
+    <header class="hero-img__header">
+      <h1>CV</h1>
       <p>
-        Hello! I am Sebastian Słoniec.<br />
+        Hello! I am Sebastian Słoniec.</br>
         I'm looking for a job as a web developer. I'm a person with
         positive attitude, highly motivated, engaged and I'm always taking responsibility for my duties.
         I like to learn new things and I'm happy to share my knowledge with the others. I'm looking for a chance to develop my skills and passion.
       </p>
       <p>If you would like to get to know me better visit these:</p>
-
-      <a href="https://www.facebook.com/sebastian.sloniec/" target="_blank">
+    </header>
+    <nav class="hero-img__nav social-media">
+      <a class="social-media__link" href="https://www.facebook.com/sebastian.sloniec/" target="_blank">
         <i class="fab fa-facebook-f"></i>
-      </a>
-      </a>
-      <a href="https://github.com/sebslon" target="_blank">
+      </a>    
+      <a class="social-media__link" href="https://github.com/sebslon" target="_blank">
         <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://www.instagram.com/sebastiansloniec/" target="_blank">
+      </a>    
+      <a class="" href="https://www.instagram.com/sebastiansloniec/" target="_blank">
         <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/sebastian-sloniec/" target="_blank">
+      </a>    
+      <a class="" href="https://www.linkedin.com/in/sebastian-sloniec/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
       </a>
-    </section>
-  </header>
+    </nav>
+  </div>
 
   <main class="main">
     <section class="section">
       <h3>Courses</h3>
-      <article class="section__article section__course">
-        <div class="section__article--title">
+      <article class="section__article section__course article">
+        <div class="article__title">
           <h4>CodersCamp - ongoing</h4>
         </div>
-        <div class="section__article--description">
+        <div class="article__description">
           <p>
             Web development knowledge, actually acquired skills from HTML5, CSS (Flexbox, Grid, RWD), JavaScript ES5/6. Actually I'm learning TypeScript.
           </p>
@@ -63,19 +60,19 @@
 
     <section class="section">
       <h3>Skills</h3>
-      <div class="section__skills">
-        <div class="section__skills--column">
+      <div class="section__skills skills">
+        <div class="skills__column">
           <h4>Good knowledge</h4>
-          <ul class="section__skills--column-list">
+          <ul class="skills__column-list">
             <li>HTML5</li>
             <li>CSS</li>
             <li>JavaScript ES5/6</li>
             <li>Solid Edge</li>
           </ul>
         </div>
-        <div class="section__skills--column">
+        <div class="skills__column">
           <h4>Basic knowledge</h4>
-          <ul class="section__skills--column-list">
+          <ul class="skills__column-list">
             <li>NodeJS</li>
             <li>TypeScript</li>
             <li>Wordpress</li>
@@ -95,31 +92,31 @@
 
     <section class="section">
       <h3>Education</h3>
-      <article class="section__article">
-        <div class="section__article--school">
-          <span>2015-2019</span> <strong>Lublin University of Technology</strong>
+      <article class="section__article article">
+        <div class="article__school">
+          <span class="article__school-years">2015-2019</span> <strong>Lublin University of Technology</strong>
         </div>
-        <div class="section__article--description">Major: Mechanical Engineering<br>
+        <div class="article__description">Major: Mechanical Engineering<br>
           Specialization: Technological</div>
       </article>
       <article class="section__article">
-        <div class="section__article--school">
-          <span>2011-2014</span>
+        <div class="article__school">
+          <span class="article__school-years">2011-2014</span>
           <strong>Zespół Szkół Nr 2 im. gen. Władysława Sikorskiego in Tomaszów Lubelski</strong>
         </div>
-        <div class="section__article--description">Main subject: Mathematics and Information Technology</div>
+        <div class="article__description">Main subject: Mathematics and Information Technology</div>
       </article>
     </section>
 
     <section class="section">
       <h3>Experience</h3>
-      <article class="section__article">
-        <div class="section__article--job-title">
+      <article class="section__article article">
+        <div class="article__job-title">
           <span>05.2020 - 09.2020</span> <strong>Aliplast Sp. z o.o.</strong><br />
           <strong>Position:</strong> Constructor
         </div>
         <div>
-          <ul class="section__article--job-description">
+          <ul class="article__job-description">
             <li>Taking part in creating new solutions and products</li>
             <li>Implemented production of pneumatic actuators.</li>
             <li>Implemented solution for internal anodizing of aluminium profiles.</li>
@@ -128,12 +125,12 @@
         </div>
       </article>
       <article class="section__article">
-        <div class="section__article--job-title">
-          <span>06.2019 - 05.2020</span> <strong>Aliplast Sp. z o.o.</strong><br />
+        <div class="article__job-title">
+          <span class="article__job-years">06.2019 - 05.2020</span> <strong>Aliplast Sp. z o.o.</strong><br />
           <strong>Position:</strong> CNC Machine Operator
         </div>
         <div>
-          <ul class="section__article--job-description">
+          <ul class="article__job-description">
             <li>CNC machining programming and process supervision - KIMLA BPF</li>
             <li>Quality control</li>
             <li>Reporting the production flow in the ERP system</li>
@@ -141,14 +138,14 @@
         </div>
       </article>
       <article class="section__article">
-        <div class="section__article--job-title">
-          <span>07.2014 - 08.2015</span> <strong>ISS Facility Services AS</strong><br />
+        <div class="article__job-title">
+          <span class="article__job-years">07.2014 - 08.2015</span> <strong>ISS Facility Services AS</strong><br />
           <strong>Position:</strong> Cleaning jobs
         </div>
       </article>
     </section>
 
-    <section class="section">
+    <section class="section section-last">
       <h3>Hobbies</h3>
       <article class="section__article">
         <p>Travelling, books, self development,
