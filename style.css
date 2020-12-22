@@ -1,44 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
-:root {
-  --first-color: rgb(85, 10, 45);
-  --second-color: rgb(255, 185, 5);
-}
-
-body {
-  margin: 0;
-  font-family: "Raleway";
-  font-size: 16px;
-  line-height: 1.8em;
-}
-
-a {
-  color: var(--second-color);
-  font-weight: 900;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.5;
-}
-
-article {
-  padding: 0 1em;
-}
-
-section {
-  margin: 1em;
+/* hero-img styles */
+.hero-img {
   padding: 1em;
-}
-
-header,
-main,
-footer {
-  margin: 0 auto;
-}
-
-header {
-  padding: 2em;
+  font-size: 18px;
+  line-height: 1.8em;
   text-align: center;
   background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
   background-size: cover;
@@ -46,113 +12,83 @@ header {
   color: white;
 }
 
-header section {
+.hero-img__header, .hero-img__nav {
   margin: 0 auto;
+  padding: 1em;
   max-width: 640px;
 }
 
-/* header img {
-  border-radius: 25%;
-  max-width: 150px;
-} */
-
-h1 {
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-
-h3 {
-  text-transform: uppercase;
-}
-
-h3,
-h4 {
-  font-weight: bold;
-}
-
-main {
+.main {
   max-width: 1140px;
 }
 
-main section:not(:last-child) {
+/* sections styles */
+.section {
+  margin: 1em;
+  padding: 1em;
   border-bottom: 1px solid #ccc;
 }
 
-.fab {
-  border: 1px solid white;
-  border-radius: 25%;
-  font-size: 1.5em;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  margin: 5px;
-  text-align: center;
+.section--last {
+  border: none;
 }
 
-a .fab {
-  color: white;
+.section__article {
+  padding: 0 1em;
 }
 
-.course,
-.skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.course .title {
+.article__title {
   color: var(--first-color);
-  -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
 }
 
-.course .descrpition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
+.article__description {
+  flex: 0 0 calc(66.6% - 1em);
   max-width: 66.6%;
-}
-
-.course .description p {
   padding-left: 1em;
 }
 
-.skills .column {
-  -ms-flex: 0 0 50%;
+.section__course,
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__column {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.skills .column ul,
-ul.job-description {
+.skills__column-list,
+.article__job-description {
   list-style-type: none;
 }
 
-.skills .column ul > li:before {
+.skills__column-list > li:before {
   content: "►";
   padding-right: 0.5em;
   color: var(--first-color);
 }
 
-.school,
-.job-title {
-  text-transform: capitalize;
-}
-
-.school span,
-.job-title span {
-  color: #889499;
-  text-decoration: underline;
-}
-
-ul.job-description li:before {
+.article__job-description > li:before {
   content: "✔";
   padding-right: 0.5em;
   color: var(--first-color);
 }
 
-footer {
+.article__school,
+.article__job-title {
+  text-transform: capitalize;
+}
+
+.article__school-years,
+.article__job-years {
+  color: #889499;
+  text-decoration: underline;
+}
+
+.footer {
   padding: 0.5em 1.5em;
   background: var(--first-color);
   color: white;
@@ -160,26 +96,44 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .course {
+  .section__course {
     display: block;
   }
 
-  .course .title,
-  .course .description {
+  .article__title,
+  .article__description {
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .skills {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-img {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .skills__column-list,
+  .article__job-description {
+    padding-left: 0.8em;
+  }
+
+  .section__skills {
     display: block;
   }
 
-  .skills .column {
+  .skills__column {
     max-width: 100%;
   }
 
-  footer {
+  .footer {
     text-align: center;
   }
 }
