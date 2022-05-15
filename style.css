@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 
+strong {
+  font-weight: 600;
+}
 /* hero-img styles */
 .hero-img {
   padding: 1em;
@@ -12,7 +15,8 @@
   color: white;
 }
 
-.hero-img__header, .hero-img__nav {
+.hero-img__header,
+.hero-img__nav {
   margin: 0 auto;
   padding: 1em;
   max-width: 640px;
@@ -85,6 +89,7 @@
 .article__school-years,
 .article__job-years {
   color: #889499;
+  font-weight: 600;
   text-decoration: underline;
 }
 
