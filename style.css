@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
+br {
+  margin: 20em 0;
+  padding: 20em 0;
+}
 strong {
   font-weight: 600;
 }
@@ -9,7 +13,7 @@ strong {
   font-size: 18px;
   line-height: 1.8em;
   text-align: center;
-  background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
+  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -70,20 +74,15 @@ strong {
 }
 
 .skills__column-list > li:before {
-  content: "►";
+  content: '►';
   padding-right: 0.5em;
   color: var(--first-color);
 }
 
 .article__job-description > li:before {
-  content: "✔";
+  content: '✔';
   padding-right: 0.5em;
   color: var(--first-color);
-}
-
-.article__school,
-.article__job-title {
-  text-transform: capitalize;
 }
 
 .article__school-years,
@@ -117,7 +116,7 @@ strong {
   }
 
   .hero-img {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
